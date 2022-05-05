@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h1>首页</h1>
+<!--<a th:href="@{/testRequestMapping}">测试RequestMapping注解的位置</a>-->
+<a th:href="@{/testRequestMapping}">测试@RequestMapping的value属性-->/testRequestMapping</a><br>
+<a th:href="@{/test}">测试@RequestMapping的value属性-->/test</a><br>
+<form th:action="@{/testPost}" method="post">
+    用户名：<input name="uname" type="text">
+    密码：<input name="pwd", type="password">
+    <input type="submit">
+</form>
+</body>
+</html>
