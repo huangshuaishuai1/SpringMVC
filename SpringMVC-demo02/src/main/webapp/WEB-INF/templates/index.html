@@ -14,5 +14,13 @@
     密码：<input name="pwd", type="password">
     <input type="submit">
 </form>
+<a th:href="@{/testParams(username='hss',password=123)}">测试@RequestMapping的params属性</a><br>
+<a th:href="@{/test1Ant}">测试@RequestMapping支持Ant风格--->?</a><br>
+<a th:href="@{/test11123Ant}">测试@RequestMapping支持Ant风格--->*</a><br>
+<a th:href="@{/test/a/a/a/Ant}">测试@RequestMapping支持Ant风格--->*</a><br>
+<a th:href="@{/testRest/4/hss}">测试@RequestMappingRest</a><br>
+
+
+
 </body>
 </html>
